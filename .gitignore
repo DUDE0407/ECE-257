@@ -2,17 +2,20 @@
 .pip-cache/
 __pycache__/
 *.pyc
+*.cache
 
-dataset/images/
-dataset/labels/
-labelme_json/
-annotation_previews/
-preview_frames/
+/dataset/images/
+/dataset/labels/
+/raw_images/
+/merged_dataset/
+/labelme_json/
+/annotation_previews/
+/preview_frames/
 
-runs/
-predictions/
-combined_obstacle_v2/
-weights/
+/runs/
+/predictions/
+/combined_obstacle_v2/
+/weights/
 
 *.zip
 sam2_t.pt

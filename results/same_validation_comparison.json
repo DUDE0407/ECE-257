@@ -1,0 +1,31 @@
+{
+  "validation_set": "colored_turn_v3 merged validation: 76 images",
+  "old_best_combined_v2": {
+    "mask_precision": 0.9222188184451101,
+    "mask_recall": 0.8012130619083604,
+    "mask_mAP50": 0.815204033057066,
+    "mask_mAP50_95": 0.7393527676265468,
+    "mask_mAP50_95_per_class": {
+      "floor": 0.9395100448663113,
+      "obstacle": 0.5391954903867823
+    }
+  },
+  "new_best_colored_turn_v3": {
+    "mask_precision": 0.946850080994569,
+    "mask_recall": 1.0,
+    "mask_mAP50": 0.986479755147383,
+    "mask_mAP50_95": 0.9126893842891338,
+    "mask_mAP50_95_per_class": {
+      "floor": 0.9841243398622176,
+      "obstacle": 0.8412544287160502
+    }
+  },
+  "new_minus_old": {
+    "mask_precision": 0.02463126254945891,
+    "mask_recall": 0.1987869380916396,
+    "mask_mAP50": 0.17127572209031694,
+    "mask_mAP50_95": 0.17333661666258704,
+    "floor_mAP50_95": 0.0446142949959063,
+    "obstacle_mAP50_95": 0.3020589383292679
+  }
+}

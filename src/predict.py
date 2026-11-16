@@ -14,16 +14,19 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--source", type=Path, required=True, help="Image, video, or folder to process")
     parser.add_argument("--project", type=Path, default=Path(__file__).resolve().parents[1])
-    parser.add_argument("--conf", type=float, default=0.25)
+    parser.add_argument("--model", type=Path, help="Optional checkpoint path; defaults to the current v3 model")
+    parser.add_argument("--conf", type=float, default=0.50)
     parser.add_argument("--name", default="latest")
     args = parser.parse_args()
 
     project = args.project.resolve()
-    model_path = project / "models" / "best_combined_v2.pt"
+    model_path = args.model.resolve() if args.model else project / "models" / "best_colored_turn_v3.pt"
     if not model_path.is_file():
         raise FileNotFoundError(f"Model not found: {model_path}")
     if not args.source.exists():
         raise FileNotFoundError(f"Input not found: {args.source}")
+    if not 0.0 <= args.conf <= 1.0:
+        raise ValueError("--conf must be between 0.0 and 1.0")
 
     model = YOLO(str(model_path))
     device = 0 if torch.cuda.is_available() else "cpu"

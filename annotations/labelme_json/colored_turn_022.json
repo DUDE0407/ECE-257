@@ -1,0 +1,66 @@
+{
+  "version": "6.0.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "floor",
+      "points": [
+        [
+          38.0,
+          578.0
+        ],
+        [
+          45.0,
+          647.0
+        ],
+        [
+          102.0,
+          771.0
+        ],
+        [
+          98.0,
+          829.0
+        ],
+        [
+          27.0,
+          904.0
+        ],
+        [
+          27.0,
+          1279.0
+        ],
+        [
+          693.0,
+          1279.0
+        ],
+        [
+          691.0,
+          612.0
+        ],
+        [
+          579.0,
+          596.0
+        ],
+        [
+          428.0,
+          590.0
+        ],
+        [
+          399.0,
+          578.0
+        ]
+      ],
+      "group_id": null,
+      "description": "best_combined_v2_floor",
+      "shape_type": "polygon",
+      "flags": {
+        "needs_review": true
+      },
+      "mask": null
+    }
+  ],
+  "imagePath": "colored_turn_022.jpg",
+  "imageData": null,
+  "imageHeight": 1280,
+  "imageWidth": 720
+}
